@@ -64,7 +64,6 @@ public class Bread {
     public String getRecipe() { return recipe; }
     public void setRecipe(String recipe) { this.recipe = recipe; }
 
-    // toString method
     @Override
     public String toString() {
         return "Bread: " + breadName + "\nState: " + state + "\nRecipe: " + recipe;
@@ -79,7 +78,7 @@ public class Bread {
             System.out.println("The " + breadName + " is baked now.");
         }
     }
-    // getIngredients method
+
     public String getIngredients() {
         return flour + " cups of flour\n" +
                 water + " cups of water\n" +

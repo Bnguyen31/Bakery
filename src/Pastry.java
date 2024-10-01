@@ -1,13 +1,13 @@
 public class Pastry extends Bread {
     private double butter;
 
-    // Default constructor
+    // constructor for Pastry
     public Pastry() {
         super(3, 1, 0.5, 2, 1, 0, "Pastry", "Pastry recipe");
         this.butter = 1.5;
     }
 
-    // Constructor with all parameters
+    // Constructor with Pastry parameters
     public Pastry(double flour, double water, double salt, double sugar, double bakingPowder, double butter) {
         super(flour, water, salt, sugar, bakingPowder, 0, "Pastry", "Pastry recipe");
         this.butter = butter;

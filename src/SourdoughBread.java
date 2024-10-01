@@ -7,13 +7,13 @@ public class SourdoughBread extends Bread {
         this.sourdoughStarter = 1.0;
     }
 
-    // Constructor with SourdoughBread parameters
+    // Constructor of the SourdoughBread
     public SourdoughBread(double flour, double water, double salt, double yeast, double sourdoughStarter) {
         super(flour, water, salt, 0, 0, yeast, "Sourdough Bread", "Sourdough recipe");
         this.sourdoughStarter = sourdoughStarter;
     }
 
-    // Getters and setters for sourdoughStarter
+    // Getters and setters for the sourdoughStarter
     public double getSourdoughStarter() { return sourdoughStarter; }
     public void setSourdoughStarter(double sourdoughStarter) { this.sourdoughStarter = sourdoughStarter; }
 

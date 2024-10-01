@@ -1,19 +1,28 @@
 public class Main {
     public static void main(String[] args) {
-        // subclasses of Bread
         SourdoughBread sourdough = new SourdoughBread();
         Pastry pastry = new Pastry();
+        Muffins muffins = new Muffins();
+        Brioche brioche = new Brioche();
 
-        // Display recipes and ingredients
-        System.out.println("Sourdough Bread class testing");
-        System.out.println("Ingredients of Sourdough Bread are:\n" + sourdough.getIngredients());
-        System.out.println("A recipe of Sourdough Bread:\n" + sourdough.getRecipe());
-        sourdough.bake();
-        sourdough.bake();
+        // Display recipes and ingredients for Sourdough Bread
+        System.out.println(sourdough);
+        sourdough.bake();  // First bake
+        sourdough.bake();  // Second bake attempt (should say already baked)
 
-        System.out.println("\nPastry class testing");
-        System.out.println("Ingredients of Pastry are:\n" + pastry.getIngredients());
-        System.out.println("A recipe of Pastry:\n" + pastry.getRecipe());
-        pastry.bake();
+        // Display recipes and ingredients for Pastry
+        System.out.println("\n" + pastry);
+        pastry.bake();  // First bake as well
+        pastry.bake();  // Second bake attempt (should say already baked)
+
+        // Display recipes and ingredients for Muffins
+        System.out.println("\n" + muffins);
+        muffins.bake();  // First bake for the next
+        muffins.bake();  // Second bake attempt (should say already baked)
+
+        // Display recipes and ingredients for Brioche
+        System.out.println("\n" + brioche);
+        brioche.bake();  // First bake
+        brioche.bake();  // Second bake attempt (should say already baked)
     }
 }
